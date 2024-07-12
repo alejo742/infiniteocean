@@ -672,3 +672,103 @@ header nav .nav-action-button a:hover {
   width: 7rem;
   height: 7rem;
 }
+
+.problem-section {
+  padding: 5rem 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.problem-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.problem-heading h3 {
+  color: #ED8000;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.problem-heading h2 {
+  color: #000;
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.problem-heading h2 strong {
+  text-decoration: underline;
+  font-weight: 500;
+  color: #ED8000;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 5vw;
+}
+.problem-grid h5 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.problem-grid p {
+  color: #484848;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.problem-grid img {
+  border-radius: 2rem;
+  object-fit: cover;
+}
+.big-problem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.big-problem img {
+  margin-bottom: 0.5rem;
+  height: min(30rem, 70vh);
+}
+.small-problems {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.small-problem-card {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 4vw;
+}
+.small-problem-card img {
+  height: 11rem;
+  width: 100%;
+}
+.small-problem-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media only screen and (max-width: 1000px) {
+  .problem-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .big-problem img {
+    max-width: 100%;
+    height: min(20rem, 50vh);
+  }
+  .problem-grid {
+    gap: 4rem;
+  }
+  .small-problems {
+    gap: 4rem;
+  }
+  .small-problem-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .small-problem-card img {
+    height: min(20rem, 50vh);
+  }
+}
