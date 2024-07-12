@@ -578,3 +578,79 @@ header nav .nav-action-button a:hover {
   font-weight: 400;
   line-height: normal;
 }
+
+.aboutus-section {
+  background-color: #343434;
+  padding: 8rem 5vw;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 8vw;
+}
+.aboutus-section .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.aboutus-section .left h3 {
+  color: #49A1C7;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.aboutus-section .left h2 {
+  color: #FFF;
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.aboutus-section .left h2 strong {
+  font-weight: 500;
+  color: #49A1C7;
+  text-decoration: underline;
+}
+.aboutus-section .left p {
+  color: #CECECE;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.aboutus-section .right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.action-card {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 3rem;
+  background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.action-card img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+.action-card h4 {
+  color: #FFF;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.action-card p {
+  color: #CECECE;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+@media only screen and (max-width: 1000px) {
+  .aboutus-section {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .aboutus-section .right {
+    grid-template-columns: 1fr;
+  }
+}
