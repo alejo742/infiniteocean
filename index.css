@@ -654,3 +654,21 @@ header nav .nav-action-button a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+.support-section {
+  background-color: #49A1C7;
+  padding: 2.5rem 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.support-section h3 {
+  color: #FFF;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.support-section img {
+  width: 7rem;
+  height: 7rem;
+}
