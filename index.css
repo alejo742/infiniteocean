@@ -383,16 +383,6 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.mobile-nav {
-  display: none;
-  flex-direction: column;
-  gap: 2rem;
-}
-.mobile-nav-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
 header nav {
     padding: 3.6rem 5vw;
     display: flex;
@@ -455,19 +445,11 @@ header nav .nav-action-button a:hover {
   header {
     background-image: none;
   }
-  header nav:nth-child(1) {
-    display: none;
-  }
-  .mobile-nav {
-    display: flex;
-  }
-}
-@media only screen and (max-width: 500px) {
-  header .mobile-nav .nav-action-button {
-    display: none;
-  }
-  .mobile-nav-wrapper {
+  header nav {
     justify-content: center;
+  }
+  header nav ul, header nav .nav-action-button {
+    display: none;
   }
 }
 
