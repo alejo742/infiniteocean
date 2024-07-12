@@ -548,3 +548,33 @@ header nav .nav-action-button a:hover {
     align-items: start;
   }
 }
+
+.image-section {
+  background: linear-gradient(to bottom, #fff 50%, #343434 50%);
+  padding: 2rem 5vw;
+  display: flex;
+  justify-content: center;
+}
+.image-large-element {
+  background-image: url('./res/invetebrate-landscape-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: min(60rem, 100vh);
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+}
+.image-large-element p {
+  border-radius: 0rem 2rem 0rem 0rem;
+  background-color: #ED8000;
+  padding: 3rem 2.5rem;
+  width: min(30rem, 70%);
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
