@@ -96,7 +96,8 @@ html {
   abbr[title] {
     border-bottom: none; /* 1 */
     text-decoration: underline; /* 2 */
-    text-decoration: underline dotted; /* 2 */
+    -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted; /* 2 */
   }
   
   /**
@@ -363,7 +364,10 @@ html {
   * remove undesired user select
   */
   a, img, button, h1, h2 {
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 
 
@@ -477,6 +481,8 @@ header nav .nav-action-button a:hover {
 }
 .hero-section .left a {
   padding: 1.5rem 5.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   color: #FFF;
@@ -494,7 +500,7 @@ header nav .nav-action-button a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: end;
+  align-items: flex-end;
 }
 .hero-data-wrapper {
   display: flex;
@@ -546,7 +552,7 @@ header nav .nav-action-button a:hover {
   height: min(60rem, 100vh);
   display: flex;
   justify-content: flex-start;
-  align-items: end;
+  align-items: flex-end;
 }
 .image-large-element p {
   border-radius: 0rem 2rem 0rem 0rem;
@@ -700,7 +706,8 @@ header nav .nav-action-button a:hover {
 }
 .problem-grid img {
   border-radius: 2rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .big-problem {
   display: flex;
